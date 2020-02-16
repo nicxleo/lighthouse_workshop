@@ -20,7 +20,6 @@ class LoadAudit extends Audit {
 
     static audit(artifacts) {
         const loadedTime = artifacts.TimeToCard;
-
         const belowThreshold = loadedTime <= MAX_CARD_TIME;
 
         return {
